@@ -26,3 +26,8 @@ li a:hover {
   background-color: blue;
   color: rgb(241, 241, 255);
 }
+
+li a:active {
+  background-color: rgb(255, 216, 255);
+  color: red;
+}
