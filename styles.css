@@ -43,3 +43,21 @@ li a:active {
   padding: 0.5em;
   border: thin solid #000;
 }
+
+/*NEEDS WORK
+
+@media (max-width: 499px;) {
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    padding: 0.25em;
+  }
+  #main-doc {
+    position: fixed;
+    margin: 0;
+  }
+}
+
+*/
