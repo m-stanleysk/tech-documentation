@@ -1,15 +1,24 @@
+#navbar {
+  width: 100px;
+  background-color: rgb(241, 241, 255);
+}
+
+.nav-header {
+  padding: 0.5em;
+  border: thin solid #000;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-li a {
+.nav-link {
   display: block;
-  width: 100px;
-  padding: 0.5em;
   text-decoration: none;
-  background-color: rgb(241, 241, 255);
+  padding: 0.5em;
+  color: rgb(0, 0, 120);
   border: thin solid #000;
 }
 
@@ -17,3 +26,38 @@ li a:hover {
   background-color: blue;
   color: rgb(241, 241, 255);
 }
+
+li a:active {
+  background-color: rgb(255, 216, 255);
+  color: red;
+}
+
+#main-doc {
+  position: absolute;
+  margin: -216px 0 0 100px;
+  background-color: rgb(241, 241, 255);
+}
+
+.main-section {
+  margin: 0;
+  padding: 0.5em;
+  border: thin solid #000;
+}
+
+/*NEEDS WORK
+
+@media (max-width: 499px;) {
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    padding: 0.25em;
+  }
+  #main-doc {
+    position: fixed;
+    margin: 0;
+  }
+}
+
+*/
