@@ -3,35 +3,55 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TOPIC</title>
+    <title>HTML Anchor Tags</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <nav id="navbar">
-      <header class="nav-header">TOPIC</header>
+      <header class="nav-header">HTML Anchor Tags</header>
       <ul>
-        <li><a class="nav-link" href="#HEADER_1">HEADER 1</a></li>
-        <li><a class="nav-link" href="#HEADER_2">HEADER 2</a></li>
-        <li><a class="nav-link" href="#HEADER_3">HEADER 3</a></li>
-        <li><a class="nav-link" href="#HEADER_4">HEADER 4</a></li>
-        <li><a class="nav-link" href="#HEADER_5">HEADER 5</a></li>
+        <li><a class="nav-link" href="#The_Basics">The Basics</a></li>
+        <li><a class="nav-link" href="#href_and_URLs">href and URLs</a></li>
+        <li><a class="nav-link" href="#Within_a_Page">Within a Page</a></li>
+        <li><a class="nav-link" href="#Email_Links">Email Links</a></li>
+        <li><a class="nav-link" href="#Phone_Links">Phone Links</a></li>
       </ul>
     </nav>
     <main id="main-doc">
-      <section id="HEADER_1" class="main-section">
-        <header>HEADER 1</header>
+      <section id="The_Basics" class="main-section">
+        <header>The Basics</header>
+        <p>Those with experience in HTML will have seen many anchor tags, which are written as <code>&lt;a&gt;&lt;/a&gt;</code>. For those without experience, this is the simplest version of the code we use to create links on a webpage.</p>
+        <p>The anchor tag can be used to create several different kinds of links:
+          <ul>
+            <li>External, taking you to a different webpage</li>
+            <li>Internal, helping you jump to a specific section of a longer page</li>
+            <li>Email links, which open your default email app</li>
+            <li>Phone links, which will open on your mobile phone</li>
+            <li>There are other things you can do with an anchor tag, but these are what we will be covering in this documentation.</li>
+          </ul>
+        </p>
+        <p>You can make text into a link by putting the opening and closing anchor tags around it, then adding the further link information covered in later sections. The most basic example is this: <code>&lt;a&gt;your text here&lt;/a&gt;</code>. (This example won't take you anywhere! It's just the start of structuring the link.)</p>
       </section>
-      <section id="HEADER_2" class="main-section">
-        <header>HEADER 2</header>
+      <section id="href_and_URLs" class="main-section">
+        <header>href and URLs</header>
+        <p>Most anchor tags are used to take you to a different webpage, either within your site or to an entirely different site. Do do this, you use a Hypertext Reference (href) to link the desired URL. The proper way to build a link is <code>&lt;a href="https://www.example.com"&gt;This is an example!&lt;/a&gt;</code></p>
+        <p>Make note of the structure -- opening angle bracket, a for anchor, then href for hypertext reference, with an equals sign and quotation marks around the target URL, the the closing angle bracket. Second, your link text. Third, opening and closing angle brackets around a slash / and a second a for anchor.</p>
+        <p>Also note that this structure (<code>&lt;tag attribute="value"&gt;&lt;/tag&gt;</code>) is common for several HTML tags and is worth getting used to!</p>
       </section>
-      <section id="HEADER_3" class="main-section">
-        <header>HEADER 3</header>
+      <section id="Within_a_Page" class="main-section">
+        <header>Within a Page</header>
+        <p>When you want to link within a page, you can use an <code>id</code> attribute in your tag and referring to it in your anchor tag, which is generally in your navigation bar or (in general) in a different part of a larger page.</p>
+        <p>The structure of the anchor tag is <code>&lt;a href="#smile"&gt;Smile!&lt;/a&gt;</code> and the structure of the target is <code>&lt;tag id="smile"&gt;Smile!&lt;/tag&gt;</code>. The pound/hashtag symbol in the anchor tag's value tells the computer that it's looking for an id. (This format is also used in CSS when referring to an id.)</p>
       </section>
-      <section id="HEADER_4" class="main-section">
-        <header>HEADER 4</header>
+      <section id="Email_Links" class="main-section">
+        <header>Email Links</header>
+        <p>When you want the viewer to open their default email app with your email address pre-filled, you can also use an anchor tag.</p>
+        <p>The structure of the anchor tag for email is <code>&lt;a href="mailto:email@example.com"&gt;Send email&lt;/a&gt;</code>. You can also pre-fill a subject line using the following structure: <code>&lt;a href="mailto:email@example.com?subject=Support Request"&gt;Send support request email&lt;/a&gt;</code>.</p>
       </section>
-      <section id="HEADER_5" class="main-section">
-        <header>HEADER 5</header>
+      <section id="Phone_Links" class="main-section">
+        <header>Phone Links</header>
+        <p>Finally we come to phone links. These anchor tags use <code>tel:</code> before the number. Note that browser support for linking telephone numbers can vary.</p>
+        <p>The structure of the anchor tag for telephone numbers is <code>&lt;a href="tel:+15555555555"&gt;1-555-555-5555&lt;/a&gt;</code>. On devices that are capable of making phone calls, this is intended to initiate a call when the link is clicked.</p>
       </section>
     </main>
   </body>
