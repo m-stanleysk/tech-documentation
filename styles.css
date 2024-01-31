@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(135, 135, 135);
+}
+
 #navbar {
   width: 100px;
   background-color: rgb(241, 241, 255);
