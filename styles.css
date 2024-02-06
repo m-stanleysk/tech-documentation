@@ -39,7 +39,7 @@ header {
   #navbar {
 	padding: 0.25em;
   }
-	li {
+	nav li {
 		display: inline;
 	}
    li a {
